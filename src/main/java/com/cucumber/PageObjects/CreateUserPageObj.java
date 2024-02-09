@@ -197,7 +197,7 @@ public class CreateUserPageObj {
 		Thread.sleep(2000);
 		cup.getRolesDropDown().click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//span[text()='"+Role+"']")).click();
+		driver.findElement(By.xpath("(//span[text()='"+Role+"'])[2]")).click();
 		Thread.sleep(2000);
 		cup.getLastNameText().click();
 		cup.getLastNameText().sendKeys(lastName+ran);
